@@ -13,7 +13,7 @@ var k,
 // Plain arrays...
 k = new Array( 10 );
 for ( i = 0; i < k.length; i++ ) {
-	k[ i ] = i;
+	k[ i ] = i + 1;
 }
 out = mean( k );
 console.log( 'Arrays: %s\n', out );
@@ -55,7 +55,7 @@ console.log( '\n' );
 // Typed arrays...
 k = new Int32Array( 10 );
 for ( i = 0; i < k.length; i++ ) {
-	k[ i ] = i;
+	k[ i ] = i + 1;
 }
 tmp = mean( k );
 out = '';

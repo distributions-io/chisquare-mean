@@ -6,8 +6,8 @@ Mean
 
 The [expected value](https://en.wikipedia.org/wiki/Expected_value) for a [Chi-squared](https://en.wikipedia.org/wiki/Chi-squared_distribution) random variable is
 
-<div class="equation" align="center" data-raw-text="\mathbb{E}\left[ X \right] = " data-equation="eq:expectation">
-	<img src="" alt="Expected value for a Chi-squared distribution.">
+<div class="equation" align="center" data-raw-text="\mathbb{E}\left[ X \right] = k" data-equation="eq:expectation">
+	<img src="https://cdn.rawgit.com/distributions-io/chisquare-mean/85f1d6f44a5aaab152679c52816bff3789d24754/docs/img/eqn.svg" alt="Expected value for a Chi-squared distribution.">
 	<br>
 </div>
 
@@ -251,7 +251,7 @@ var k,
 // Plain arrays...
 k = new Array( 10 );
 for ( i = 0; i < k.length; i++ ) {
-	k[ i ] = i;
+	k[ i ] = i + 1;
 }
 out = mean( k );
 
@@ -282,7 +282,7 @@ out = mean( k, {
 // Typed arrays...
 k = new Int32Array( 10 );
 for ( i = 0; i < k.length; i++ ) {
-	k[ i ] = i;
+	k[ i ] = i + 1;
 }
 out = mean( k );
 
